@@ -11,6 +11,7 @@ const path = require("path");
     app.set("view engine", "hbs");
     app.set("views", template_path); 
     hbs.registerPartials(partials_path); 
+    const Register=require("./models/registers")
     console.log(path.join(__dirname, "../public")); 
     // const template_path = path.join(__dirname, "../templates/views"); 
         app.get("/", (req, res) => {
