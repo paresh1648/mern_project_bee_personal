@@ -1,8 +1,11 @@
-const mongoose=require("mongoose");
-const employeeSchema=new mongoose.Schema({
+const mongoose=require("mongoose"); //It will import mongoose model
+//It will create new Schema defining which type of data will be added with its variable name
+const employeeSchema=new mongoose.Schema({   
+ //firstName will be of type String and required:true means the field needs compulsory to be filled,if required:false then the field is not compulsory to be filled
+ //unique:true is used to remove duplicacy of data 
     firstName:{
         type:String,
-        required:true
+        required:true     
     },
     lastName:{
         type:String,
@@ -36,8 +39,8 @@ const employeeSchema=new mongoose.Schema({
         type:String,
         required:true
     }
-})
-
+});
+//Register will make new object mongoose.model in which all the data will be stored in JSOn
 const Register=new mongoose.model("Register",employeeSchema);
-
+//Now we have to export the module Register
 module.exports=Register;
