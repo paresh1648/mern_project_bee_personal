@@ -37,8 +37,8 @@ const path = require("path"); //Require Path Module
             //If password==cpassword then only we will be able to fill up the data 
                                 if(password === cpassword){
                                     const registerEmployee = new Register({
-                                        firstname : req.body.firstname,
-                                        lastname  : req.body.lastname,
+                                        firstName : req.body.firstName,
+                                        lastName  : req.body.lastName,
                                         email     : req.body.email,
                                         gender    : req.body.gender,
                                         phone     : req.body.phone,
