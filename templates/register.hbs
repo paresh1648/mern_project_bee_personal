@@ -15,65 +15,73 @@
 
         <body>
             <!--This form contains data to be filled referenced from bootstrap website-->
-                <form action="/register" method="post"> 
-                <div class="form-group row">
-                    <label for="inputname3" class="col-sm-2 col-form-label">First Name</label>
-                    <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputname3" name="firstName">
+                <form action="/register" method="post"> <!--The form will contain post method with action at register.hbs file-->
+                <div class="form-group row"> <!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputname3" class="col-sm-2 col-form-label">First Name</label><!--Label for First Name-->
+                    <div class="col-sm-10"> 
+                    <input type="text" class="form-control" id="inputname3" name="firstName"><!--Input to add FirstName in Database-->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="inputlastname3" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputlastname3" class="col-sm-2 col-form-label">Last Name</label><!--Label for Last Name-->
                     <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputlastname3" name="lastName">
+                    <input type="text" class="form-control" id="inputlastname3" name="lastName"><!--Input to add LastName in Database-->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label><!--Label for Email-->
                     <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" name="email">
+                    <input type="email" class="form-control" id="inputEmail3" name="email"><!--Input to add Email in Database-->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="inputphonenumber3" class="col-sm-2 col-form-label">Phone</label>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputphonenumber3" class="col-sm-2 col-form-label">Phone</label><!--Label for Phone-->
                     <div class="col-sm-10">
-                    <input type="text" minlength="10" maxlength="10"  class="form-control" id="inputphonenumber3" name="phone">
+                    <input type="text" minlength="10" maxlength="10"  class="form-control" id="inputphonenumber3" name="phone"><!--Input to add Phone with Min and Max Length 10 in Database-->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label><!--Label for Password-->
                     <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" name="password">
+                    <input type="password" class="form-control" id="inputPassword3" name="password"><!--Input to add Password in Database-->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Gender</label>
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male" checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label class="col-sm-2 col-form-label">Gender</label><!--Label for Gender-->
+                <div class="form-check"> <!--Indication to form for checked button added-->
+                <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male" checked><!--radio type button default checked for gender-->
+                <label class="form-check-label" for="exampleRadios1"> <!--Label for Male-->
                     Male
                 </label>
                 </div>
-                <div class="form-check">
-                <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female">
-                <label class="form-check-label" for="exampleRadios2">
+                <div class="form-check"><!--Indication to form for checked button added-->
+                <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female"><!--radio type button default checked for gender-->
+                <label class="form-check-label" for="exampleRadios2"><!--Label for Female-->
                     Female
                 </label>
                 </div>
                 </div>
-                <div class="form-group row">
-                    <label for="Age" class="col-sm-2 col-form-label" name="Agee">Age</label>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="Age" class="col-sm-2 col-form-label" name="Agee">Age</label><!--Label for Age-->
                     <div class="col-sm-10">
-                    <input type="text" name="age" placeholder="Enter Your Age *" id="Age">
+                    <input type="text" name="age" placeholder="Enter Your Age *" id="Age"><!--Input to add Age in Database-->
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="ConfirmPassword" class="col-sm-2 col-form-label" name="passwordconfirm">Confirm Password</label>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="ConfirmPassword" class="col-sm-2 col-form-label" name="passwordconfirm">Confirm Password</label><!--Label for COnfirm Password-->
                     <div class="col-sm-10">
-                    <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password *" id="ConfirmPassword"/ >
+                    <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password *" id="ConfirmPassword"/ ><!--Input tag for confirm password-->
                     </div>
                 </div>
-                <input type="submit" value="Register" class="btnRegister"   />
+                <input type="submit" value="Register" class="btnRegister"   /><!--Register button to store database-->
                 </form>
             <!-- Optional JavaScript; choose one of the two! -->
 
